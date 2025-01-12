@@ -1,0 +1,142 @@
+{
+    "heroes": {
+      "Captain America": {
+        "image": "photos/Captain_America.webp",
+        "description": "A super soldier and leader of the Avengers."
+      },
+      "Doctor Strange": {
+        "image": "photos/Doctor_Strange.webp",
+        "description": "Master of the Mystic Arts."
+      },
+      "Black Panther": {
+        "image": "photos/Black_Panther.webp",
+        "description": "King of Wakanda, protector of his people."
+      },
+      "Hawkeye": {
+        "image":"photos/Hawkeye.webp",
+        "description": ""
+      },
+      "Thor": {
+        "image":"photos/Thor.webp",
+        "description": ""
+      },
+      "Groot": {
+        "image": "photos/",
+        "description": "."
+      },
+      "Magneto": {
+        "image": "photos/",
+        "description": "."
+      },
+      "Hulk": {
+        "image": "photos/Doctor_Strange.webp",
+        "description": ""
+      },
+      "Venom": {
+        "image": "photos/Doctor_Strange.webp",
+        "description": ""
+      },
+      "Peni Parker": {
+        "image": "photos/Doctor_Strange.webp",
+        "description": ""
+      },
+      "Hela": {
+        "image": "photos/Doctor_Strange.webp",
+        "description": ""
+      },
+      "Iron Fist": {
+        "image": "photos/Doctor_Strange.webp",
+        "description": ""
+      },
+      "Iron Man": {
+        "image": "photos/Doctor_Strange.webp",
+        "description": "."
+      },
+      "Magik": {
+        "image": "photos/Doctor_Strange.webp",
+        "description": ""
+      },
+      "Mister Fantastic": {
+        "image": "photos/Doctor_Strange.webp",
+        "description": ""
+      },
+      "Moon Knight": {
+        "image": "photos/Doctor_Strange.webp",
+        "description": ""
+      },
+      "Namor": {
+        "image": "photos/Doctor_Strange.webp",
+        "description": ""
+      },
+      "Psylocke": {
+        "image": "photos/Doctor_Strange.webp",
+        "description": ""
+      },
+      "Scarlet Witch": {
+        "image": "photos/Doctor_Strange.webp",
+        "description": ""
+      },
+      "Spider-Man": {
+        "image": "photos/Doctor_Strange.webp",
+        "description": ""
+      },
+      "Squirrel Girl": {
+        "image": "photos/Doctor_Strange.webp",
+        "description": ""
+      },
+      "Star-Lord": {
+        "image": "photos/Doctor_Strange.webp",
+        "description": ""
+      },
+      "Storm": {
+        "image": "photos/Doctor_Strange.webp",
+        "description": ""
+      },
+      "The Punisher": {
+        "image": "photos/Doctor_Strange.webp",
+        "description": ""
+      },
+      "Winter Soldier": {
+        "image": "photos/Doctor_Strange.webp",
+        "description": ""
+      },
+      "Wolverine": {
+        "image": "photos/Doctor_Strange.webp",
+        "description": ""
+      },
+      "Adam Warlock": {
+        "image": "photos/Doctor_Strange.webp",
+        "description": ""
+      },
+      "Cloack & Dagger": {
+        "image": "photos/Doctor_Strange.webp",
+        "description": ""
+      },
+      "Invisible Woman": {
+        "image": "photos/Doctor_Strange.webp",
+        "description": ""
+      },
+      "Jeff": {
+        "image": "photos/Doctor_Strange.webp",
+        "description": ""
+      },
+      "Loki": {
+        "image": "photos/Doctor_Strange.webp",
+        "description": ""
+      },
+      "Luna Snow": {
+        "image": "photos/Doctor_Strange.webp",
+        "description": ""
+      },
+      "Mantis": {
+        "image": "photos/Doctor_Strange.webp",
+        "description": ""
+      },
+      "Rocket Racoon": {
+        "image": "photos/Doctor_Strange.webp",
+        "description": ""
+      }
+
+    }
+  }
+  

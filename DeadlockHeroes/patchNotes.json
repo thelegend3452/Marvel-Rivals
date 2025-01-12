@@ -1,0 +1,49 @@
+{
+    "patchVersion": "20250110",
+    "releaseDate": "2025-01-09",
+    "title": "Marvel Rivals Version 20250110 Balance Post – Season 1 Begins!",
+    "summary": "Summary of the patch with key highlights.",
+    "heroes": {
+      "Vanguard": [
+        {
+          "name": "Captain America",
+          "changes": [
+            "Reduce the delay time for shield restoration after releasing Living Legend from 3s to 2s.",
+            "Reduce Liberty Rush cooldown from 12s to 10s.",
+            "Increase base health from 650 to 675.",
+            "Reduce the energy cost for releasing Freedom Charge (ultimate ability) from 3400 to 3100; Reduce the additional health provided per second to self after releasing it from 110 to 100."
+          ]
+        },
+        {
+          "name": "Doctor Strange",
+          "changes": [
+            "Add damage falloff to Maelstrom of Madness and Gamma Maelstrom. Starting at 5 meters and reducing to 70% at 8 meters.",
+            "Slightly decrease the shield value recovery rate after releasing Shield of the Seraphim from 80/s to 70/s."
+          ]
+        }
+      ],
+      "Duelist": [
+        {
+          "name": "Black Panther",
+          "changes": [
+            "Reduce the additional health provided to self after refreshing Vibranium Marks with Spirit Rend from 40 to 30, and the upper limit of additional health provided from 120 to 75."
+          ]
+        }
+      ]
+    },
+    "teamUpAbilities": [
+      {
+        "teamUp": "Hawkeye – Black Widow",
+        "changes": [
+          "Reduce Hawkeye's season bonus from 20% to 15%."
+        ]
+      },
+      {
+        "teamUp": "Hela – Thor – Loki",
+        "changes": [
+          "Reduce Hela's season bonus from 20% to 15%."
+        ]
+      }
+    ]
+  }
+  
