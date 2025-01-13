@@ -1,142 +1,73 @@
 {
-    "heroes": {
-      "Captain America": {
-        "image": "photos/Captain_America.webp",
-        "description": "A super soldier and leader of the Avengers."
-      },
-      "Doctor Strange": {
-        "image": "photos/Doctor_Strange.webp",
-        "description": "Master of the Mystic Arts."
-      },
-      "Black Panther": {
-        "image": "photos/Black_Panther.webp",
-        "description": "King of Wakanda, protector of his people."
-      },
-      "Hawkeye": {
-        "image":"photos/Hawkeye.webp",
-        "description": ""
-      },
-      "Thor": {
-        "image":"photos/Thor.webp",
-        "description": ""
-      },
-      "Groot": {
-        "image": "photos/",
-        "description": "."
-      },
-      "Magneto": {
-        "image": "photos/",
-        "description": "."
-      },
-      "Hulk": {
-        "image": "photos/Doctor_Strange.webp",
-        "description": ""
-      },
-      "Venom": {
-        "image": "photos/Doctor_Strange.webp",
-        "description": ""
-      },
-      "Peni Parker": {
-        "image": "photos/Doctor_Strange.webp",
-        "description": ""
-      },
-      "Hela": {
-        "image": "photos/Doctor_Strange.webp",
-        "description": ""
-      },
-      "Iron Fist": {
-        "image": "photos/Doctor_Strange.webp",
-        "description": ""
-      },
-      "Iron Man": {
-        "image": "photos/Doctor_Strange.webp",
-        "description": "."
-      },
-      "Magik": {
-        "image": "photos/Doctor_Strange.webp",
-        "description": ""
-      },
-      "Mister Fantastic": {
-        "image": "photos/Doctor_Strange.webp",
-        "description": ""
-      },
-      "Moon Knight": {
-        "image": "photos/Doctor_Strange.webp",
-        "description": ""
-      },
-      "Namor": {
-        "image": "photos/Doctor_Strange.webp",
-        "description": ""
-      },
-      "Psylocke": {
-        "image": "photos/Doctor_Strange.webp",
-        "description": ""
-      },
-      "Scarlet Witch": {
-        "image": "photos/Doctor_Strange.webp",
-        "description": ""
-      },
-      "Spider-Man": {
-        "image": "photos/Doctor_Strange.webp",
-        "description": ""
-      },
-      "Squirrel Girl": {
-        "image": "photos/Doctor_Strange.webp",
-        "description": ""
-      },
-      "Star-Lord": {
-        "image": "photos/Doctor_Strange.webp",
-        "description": ""
-      },
-      "Storm": {
-        "image": "photos/Doctor_Strange.webp",
-        "description": ""
-      },
-      "The Punisher": {
-        "image": "photos/Doctor_Strange.webp",
-        "description": ""
-      },
-      "Winter Soldier": {
-        "image": "photos/Doctor_Strange.webp",
-        "description": ""
-      },
-      "Wolverine": {
-        "image": "photos/Doctor_Strange.webp",
-        "description": ""
-      },
-      "Adam Warlock": {
-        "image": "photos/Doctor_Strange.webp",
-        "description": ""
-      },
-      "Cloack & Dagger": {
-        "image": "photos/Doctor_Strange.webp",
-        "description": ""
-      },
-      "Invisible Woman": {
-        "image": "photos/Doctor_Strange.webp",
-        "description": ""
-      },
-      "Jeff": {
-        "image": "photos/Doctor_Strange.webp",
-        "description": ""
-      },
-      "Loki": {
-        "image": "photos/Doctor_Strange.webp",
-        "description": ""
-      },
-      "Luna Snow": {
-        "image": "photos/Doctor_Strange.webp",
-        "description": ""
-      },
-      "Mantis": {
-        "image": "photos/Doctor_Strange.webp",
-        "description": ""
-      },
-      "Rocket Racoon": {
-        "image": "photos/Doctor_Strange.webp",
-        "description": ""
-      }
-
+  "heroes": {
+    "Captain America": {
+      "image": "photos/Captain_America.webp",
+      "description": "A super soldier and leader of the Avengers."
+    },
+    "Doctor Strange": {
+      "image": "photos/Doctor_Strange.webp",
+      "description": "Master of the Mystic Arts."
+    },
+    "Black Panther": {
+      "image": "photos/Black_Panther.webp",
+      "description": "King of Wakanda, protector of his people."
+    },
+    "Hawkeye": {
+      "image": "photos/Hawkeye.webp",
+      "description": "Master archer and member of the Avengers."
+    },
+    "Thor": {
+      "image": "photos/Thor.webp",
+      "description": "God of Thunder, defender of Asgard."
+    },
+    "Groot": {
+      "image": "photos/Groot.webp",
+      "description": "A sentient tree and member of the Guardians of the Galaxy."
+    },
+    "Magneto": {
+      "image": "photos/Magneto.webp",
+      "description": "Master of magnetism and sometimes villain, sometimes ally."
+    },
+    "Hulk": {
+      "image": "photos/Hulk.webp",
+      "description": "The green-skinned powerhouse of the Avengers."
+    },
+    "Loki": {
+      "image": "photos/Loki.webp",
+      "description": "God of Mischief and Thor's brother."
+    },
+    "Hela": {
+      "image": "photos/Hela.webp",
+      "description": "Goddess of Death and ruler of Hel."
+    },
+    "Rocket Racoon": {
+      "image": "photos/Rocket_Racoon.webp",
+      "description": "A genetically modified raccoon and expert marksman."
+    },
+    "Mantis": {
+      "image": "photos/Mantis.webp",
+      "description": "A member of the Guardians of the Galaxy with empathic powers."
+    },
+    "Black Widow":{
+      "image": "photos/Widow.webp",
+      "description":""
+    }
+  },
+  "teamUps": {
+    "Hawkeye – Black Widow": {
+        "images": [
+            "photos/Hawkeye.webp",
+            "photos/Widow.webp"
+        ],
+        "description": "An expert archer and a master spy team up to save the world."
+    },
+    "Hela – Thor – Loki": {
+        "images": [
+            "photos/Hela.webp",
+            "photos/Thor.webp",
+            "photos/Loki.webp"
+        ],
+        "description": "Asgardian siblings with immense power, each with their own agenda."
     }
   }
-  
+}
