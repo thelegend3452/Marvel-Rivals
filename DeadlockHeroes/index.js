@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', function () {
   const dropdownMenu = document.getElementById('patch-dropdown');
   const container = document.getElementById('patch-notes-container');
 
-  // Fetch patchNotes.json and heroes.json
   Promise.all([
     fetch('patchNotes.json').then(response => response.json()),
     fetch('heroes.json').then(response => response.json())
@@ -13,14 +12,12 @@ document.addEventListener('DOMContentLoaded', function () {
     .then(([patchData, heroData]) => {
       const patches = patchData.patches;
 
-      // Handle no patches available
       if (!patches || patches.length === 0) {
         dropdownMenu.innerHTML = `<option>No patches available</option>`;
         container.innerHTML = `<p>No patches found.</p>`;
         return;
       }
 
-      // Populate dropdown menu with patch titles
       patches.forEach(patch => {
         const option = document.createElement('option');
         option.value = patch.patchId;
@@ -28,7 +25,6 @@ document.addEventListener('DOMContentLoaded', function () {
         dropdownMenu.appendChild(option);
       });
 
-      // Select patch based on patchId or default to the first patch
       const selectedPatch = patchId
         ? patches.find(patch => patch.patchId === patchId)
         : patches[0];
@@ -38,10 +34,8 @@ document.addEventListener('DOMContentLoaded', function () {
         return;
       }
 
-      // Set dropdown selection to the selected patch
       dropdownMenu.value = selectedPatch.patchId;
 
-      // Function to display patch details
       const displayPatchDetails = patch => {
         container.innerHTML = `
           <h2>${patch.title}</h2>
@@ -49,7 +43,6 @@ document.addEventListener('DOMContentLoaded', function () {
           <p>${patch.summary}</p>
         `;
 
-        // Display content sections
         if (patch.content) {
           patch.content.forEach(section => {
             const sectionElement = document.createElement('section');
@@ -70,7 +63,6 @@ document.addEventListener('DOMContentLoaded', function () {
           container.innerHTML += `<p>No additional content available for this patch.</p>`;
         }
 
-        // Display hero data
         if (patch.heroes && Object.keys(patch.heroes).length > 0) {
           Object.keys(patch.heroes).forEach(category => {
             const section = document.createElement('section');
