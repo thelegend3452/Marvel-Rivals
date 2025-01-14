@@ -107,6 +107,140 @@
           ]
         }
       ]
+    },
+    {
+      "patchId": "20241210",
+      "patchVersion": "20241210",
+      "releaseDate": "2024-12-10",
+      "title": "Marvel Rivals Version 20241210 Patch Notes",
+      "summary": "Greetings, Rivals! We're here to give you the scoop on Version 20241210's updates!",
+      "content": [
+        {
+          "sectionTitle": "All Platforms",
+          "content": [
+            {
+              "title": "General",
+              "details": [
+                "When playing highlights and recordings, crosshair deviation would be significant, and there was a possibility for lag. This issue has been resolved.",
+                "Changing where Highlights were saved would cause the game to crash. This issue has been resolved.",
+                "Players joining a Quick Match as a replacement may not be able to see heroes' equipped costumes. This issue has been resolved.",
+                "Mission progress on the Season Event screen would not display correctly. This issue has been resolved.",
+                "Fixed some textual errors. More fixes will be coming in a future update."
+              ]
+            },
+            {
+              "title": "Maps & Game Modes",
+              "details": [
+                "Special collisions on certain maps caused the player's character to become stuck or clip through and enter strange areas. These issues have been largely resolved."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "patchId": "20241219",
+      "patchVersion": "20241219",
+      "releaseDate": "2024-12-19",
+      "title": "Marvel Rivals Winter Celebration Version 20241219 Patch Notes",
+      "summary": "Dear Rivals: Get ready to embrace the chill and welcome the holiday season with the first Special Event of Marvel Rivals!",
+      "content": [
+        {
+          "sectionTitle": "Special Event—Winter Celebration",
+          "content": [
+            {
+              "title": "Dive into the frosty festivities",
+              "details": [
+                "Join the fun and earn the Jeff the Land Shark - Cuddly Fuzzlefin series costume rewards completely for FREE!",
+                "Event Duration: 2024/12/20 07:00:00 ~ 2025/01/09 15:59:59 (UTC+0)"
+              ]
+            }
+          ]
+        },
+        {
+          "sectionTitle": "New Mode—Jeff's Winter Splash Festival",
+          "content": [
+            {
+              "title": "Winter? Snow? It's Jeff!",
+              "details": [
+                "Take control of Jeff the Land Shark and spray snowflakes to transform the garden of Yggsgard: Royal Palace into a winter wonderland."
+              ]
+            }
+          ]
+        },
+        {
+          "sectionTitle": "Commemorative Gallery Card—Season's Beatings!",
+          "content": [
+            {
+              "title": "Craft your personalized winter greeting card",
+              "details": [
+                "Complete missions to earn Golden and Silver Frost.",
+                "Unlock and upgrade a dazzling array of greeting card decorations."
+              ]
+            }
+          ]
+        },
+        {
+          "sectionTitle": "New Costumes—Winter Holiday Series",
+          "content": [
+            {
+              "title": "Celebrate the season with themed costumes",
+              "details": [
+                "Jeff the Land Shark - Cuddly Fuzzlefin (Free during the 'Winter Celebration' event)",
+                "Groot - Holiday Happiness (Available 2024/12/20 to 2025/01/10 UTC+0)",
+                "Rocket Raccoon - Wild Winter (Available 2024/12/20 to 2025/01/10 UTC+0)",
+                "Venom - Snow Symbiote (Available 2024/12/27 to 2025/01/17 UTC+0)",
+                "Magik - Frozen Demon (Available 2024/12/27 to 2025/01/17 UTC+0)"
+              ]
+            }
+          ]
+        },
+        {
+          "sectionTitle": "Bug Fixes",
+          "content": [
+            {
+              "title": "All Platforms—General",
+              "details": [
+                "Fixed the Double-Elimination Tournament Display issue.",
+                "Resolved the Tournament Exit Glitch.",
+                "Fixed issues related to historical faction access after tournaments.",
+                "Squirrel Girl achievement now properly counts enemy KOs.",
+                "Partially resolved network stability issues under poor conditions."
+              ]
+            },
+            {
+              "title": "Maps and Gameplay",
+              "details": [
+                "Resolved character collision issues on some maps.",
+                "Corrected vehicle performance in special convoy missions."
+              ]
+            },
+            {
+              "title": "Hero Bug Fixes",
+              "details": [
+                "Doctor Strange's portal KOs are functioning correctly again.",
+                "Fixed Winter Soldier's movement speed issues after using his ultimate.",
+                "Rocket Raccoon's jet pack issues have been resolved.",
+                "Venom's 'Cyan Clash' emote texture corrected.",
+                "Star-Lord's low gravity glitch resolved.",
+                "Fixed terrain KO issues with Jeff the Land Shark's ultimate."
+              ]
+            }
+          ]
+        },
+        {
+          "sectionTitle": "Console",
+          "content": [
+            {
+              "title": "Memory Mastery",
+              "details": [
+                "Optimized console memory management to prevent crashes."
+              ]
+            }
+          ]
+        }
+      ]
     }
+    
   ]
 }
