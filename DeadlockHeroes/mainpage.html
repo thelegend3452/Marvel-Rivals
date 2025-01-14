@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marvel Rivals Main Page</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Patches</a></li>
+        <li><a href="hero.html">Heroes</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="top-section">
+      <div class="column" id="patch-list">
+        <h2>Latest Patches</h2>
+       
+      </div>
+      <div class="column" id="placeholder">
+        
+      </div>
+    </section>
+    
+    <section id="bottom-section">
+      <h2>Popular Heroes</h2>
+      <div id="hero-list">
+      </div>
+    </section>
+  </main>
+  
+  
+
+  <footer>
+    Not affialted with NetEase Games in any way. A student trying to make reading easier.
+  </footer>
+
+  <script>
+document.addEventListener('DOMContentLoaded', function () {
+  fetch('patchNotes.json')
+    .then(response => response.json())
+    .then(data => {
+      const patchList = document.getElementById('patch-list');
+      const patches = data.patches; 
+
+      if (!patches || patches.length === 0) {
+        patchList.innerHTML = `<p>No patches available.</p>`;
+        return;
+      }
+
+      patches.slice(0, 3).forEach(patch => {
+        const patchElement = document.createElement('div');
+        patchElement.classList.add('card');
+        patchElement.innerHTML = `
+          <h4>${patch.title}</h4>
+          <p><strong>Version:</strong> ${patch.patchVersion || 'N/A'}</p>
+          <p><strong>Date:</strong> ${patch.releaseDate || 'N/A'}</p>
+        `;
+
+        patchElement.addEventListener('click', () => {
+          window.location.href = `index.html?patchId=${patch.patchId}`;
+        });
+
+        patchList.appendChild(patchElement);
+      });
+    })
+    .catch(error => console.error('Error loading patch notes:', error));
+
+
+
+ fetch('heroes.json')
+    .then(response => response.json())
+    .then(heroData => {
+      const heroList = document.getElementById('hero-list');
+      const heroNames = Object.keys(heroData.heroes);
+
+      heroNames.sort(() => 0.5 - Math.random());
+
+      heroNames.slice(0, 3).forEach(heroName => {
+        const hero = heroData.heroes[heroName];
+        const heroElement = document.createElement('div');
+        heroElement.classList.add('card');
+        heroElement.innerHTML = `
+          <h4>${heroName}</h4>
+          <img src="${hero.image}" alt="${heroName}" class="hero-image" />
+          <p>${hero.description}</p>
+        `;
+        heroList.appendChild(heroElement);
+      });
+    })
+    .catch(error => console.error('Error loading heroes:', error));
+});
+
+
+  </script>
+</body>
+</html>

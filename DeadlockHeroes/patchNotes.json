@@ -1,49 +1,112 @@
 {
-    "patchVersion": "20250110",
-    "releaseDate": "2025-01-09",
-    "title": "Marvel Rivals Version 20250110 Balance Post – Season 1 Begins!",
-    "summary": "Summary of the patch with key highlights.",
-    "heroes": {
-      "Vanguard": [
+  "patches": [
+    {
+      "patchId": "20250110",
+      "patchVersion": "20250110",
+      "releaseDate": "2025-01-09",
+      "title": "Marvel Rivals Version 20250110 Balance Post – Season 1 Begins!",
+      "summary": "Summary of the patch with key highlights.",
+      "heroes": {
+        "Vanguard": [
+          {
+            "name": "Captain America",
+            "changes": [
+              "Reduce the delay time for shield restoration after releasing Living Legend from 3s to 2s.",
+              "Reduce Liberty Rush cooldown from 12s to 10s.",
+              "Increase base health from 650 to 675.",
+              "Reduce the energy cost for releasing Freedom Charge (ultimate ability) from 3400 to 3100; Reduce the additional health provided per second to self after releasing it from 110 to 100."
+            ]
+          },
+          {
+            "name": "Doctor Strange",
+            "changes": [
+              "Add damage falloff to Maelstrom of Madness and Gamma Maelstrom. Starting at 5 meters and reducing to 70% at 8 meters.",
+              "Slightly decrease the shield value recovery rate after releasing Shield of the Seraphim from 80/s to 70/s."
+            ]
+          }
+        ],
+        "Duelist": [
+          {
+            "name": "Black Panther",
+            "changes": [
+              "Reduce the additional health provided to self after refreshing Vibranium Marks with Spirit Rend from 40 to 30, and the upper limit of additional health provided from 120 to 75."
+            ]
+          }
+        ]
+      },
+      "teamUpAbilities": [
         {
-          "name": "Captain America",
+          "teamUp": "Hawkeye – Black Widow",
           "changes": [
-            "Reduce the delay time for shield restoration after releasing Living Legend from 3s to 2s.",
-            "Reduce Liberty Rush cooldown from 12s to 10s.",
-            "Increase base health from 650 to 675.",
-            "Reduce the energy cost for releasing Freedom Charge (ultimate ability) from 3400 to 3100; Reduce the additional health provided per second to self after releasing it from 110 to 100."
+            "Reduce Hawkeye's season bonus from 20% to 15%."
           ]
         },
         {
-          "name": "Doctor Strange",
+          "teamUp": "Hela – Thor – Loki",
           "changes": [
-            "Add damage falloff to Maelstrom of Madness and Gamma Maelstrom. Starting at 5 meters and reducing to 70% at 8 meters.",
-            "Slightly decrease the shield value recovery rate after releasing Shield of the Seraphim from 80/s to 70/s."
-          ]
-        }
-      ],
-      "Duelist": [
-        {
-          "name": "Black Panther",
-          "changes": [
-            "Reduce the additional health provided to self after refreshing Vibranium Marks with Spirit Rend from 40 to 30, and the upper limit of additional health provided from 120 to 75."
+            "Reduce Hela's season bonus from 20% to 15%."
           ]
         }
       ]
     },
-    "teamUpAbilities": [
-      {
-        "teamUp": "Hawkeye – Black Widow",
-        "changes": [
-          "Reduce Hawkeye's season bonus from 20% to 15%."
-        ]
-      },
-      {
-        "teamUp": "Hela – Thor – Loki",
-        "changes": [
-          "Reduce Hela's season bonus from 20% to 15%."
-        ]
-      }
-    ]
-  }
-  
+    {
+      "patchId": "20250108",
+      "patchVersion": "20250108",
+      "releaseDate": "2025-01-08",
+      "title": "Marvel Rivals Version 20250110 Patch Notes",
+      "summary": "Rivals, Assemble! As the light fades and the eternal night falls, Dracula and his undead legion have seized control of New York City. Before we embark on the epic battle to banish the darkness and restore the light, dive into the thrilling details of this update!",
+      "content": [
+        {
+          "sectionTitle": "New Content",
+          "content": [
+            {
+              "title": "Heroes and Costumes",
+              "details": [
+                "Mister Fantastic and the Invisible Woman join Marvel Rivals!",
+                "New Costumes: Mister Fantastic - The Maker; Invisible Woman - Malice!"
+              ]
+            },
+            {
+              "title": "Maps and Modes",
+              "details": [
+                "Explore the new Convoy map - Empire of Eternal Night: Midtown.",
+                "Prepare for the thrilling arcade mode (Doom Match) and its map (Sanctum Sanctorum): 8-12 players will engage in battle, with the top 50% emerging victorious.",
+                "New feature: In Convoy and Convergence, both sides can transition to the next spawn room sometime after the attacking side completes the current target.",
+                "Enhanced feature: During the loading phase of a Quick Match, you can now view the Nameplates of both sides."
+              ]
+            },
+            {
+              "title": "Season & Store",
+              "details": [
+                "Unlock a dazzling shiny new Battle Pass featuring 10 brand new sets of heroic costumes!",
+                "Embark on the first thrilling half of the Midnight Features Season Event!",
+                "Dive into the latest Twitch Drops event, featuring rewards such as the Hela - Will of Galacta costume. (Stay tuned for official announcements for specific times)",
+                "We have revised the refresh times for various in-game content. Beginning with Season 1, the unlock time for daily missions, the availability of new items in the store, and the start time for most events have been adjusted from 7:00 (UTC+0) to 9:00 (UTC+0).",
+                "Additionally, we have optimized the mission types and removed some of the more challenging ones."
+              ]
+            }
+          ]
+        },
+        {
+          "sectionTitle": "Fixes and Optimizations",
+          "content": [
+            {
+              "title": "General",
+              "details": [
+                "Resolved numerous issues related to notifications.",
+                "Rectified various text errors."
+              ]
+            },
+            {
+              "title": "Heroes",
+              "details": [
+                "Corrected minor movement ability discrepancies for certain heroes (like Doctor Strange and Magik) at both low and high frame rates.",
+                "Addressed occasional malfunctions with, or inability to use Wolverine's team-up ability."
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2e2e2e;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1e1e1e;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: yellow;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    color: red;
+}
+
+main {
+    padding: 20px;
+}
+
+#top-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+}
+
+.column {
+    flex: 1;
+    background-color: #3e3e3e;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    min-width: 300px; 
+}
+
+.column h2 {
+    color: yellow;
+    border-bottom: 2px solid yellow;
+    padding-bottom: 5px;
+}
+
+.card {
+    background-color: #1e1e1e;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card h4 {
+    color: red;
+    margin-bottom: 10px;
+}
+
+.card img {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+}
+
+#bottom-section {
+    background-color: #3e3e3e;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+#bottom-section h2 {
+    color: yellow;
+    border-bottom: 2px solid yellow;
+    padding-bottom: 5px;
+}
+
+footer {
+    background-color: #1e1e1e;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    #top-section {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .column {
+        max-width: 80%; 
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .column {
+        max-width: 90%; 
+    }
+
+    .card img {
+        width: 80px;
+    }
+
+    footer {
+        position: static; 
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1, .column h2 {
+        font-size: 18px; 
+    }
+
+    nav ul li a {
+        font-size: 12px; 
+    }
+
+    .card img {
+        width: 60px; 
+    }
+
+    .card h4 {
+        font-size: 16px;
+    }
+}
