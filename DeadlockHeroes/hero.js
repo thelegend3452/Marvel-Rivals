@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', function () {
         return;
       }
 
-      // Populate dropdown menu
       dropdownMenu.innerHTML = `<option value="">Select a Patch</option>`;
       patches.forEach(patch => {
         const option = document.createElement('option');
@@ -25,7 +24,6 @@ document.addEventListener('DOMContentLoaded', function () {
         dropdownMenu.appendChild(option);
       });
 
-      // Display all heroes initially
       const displayAllHeroes = () => {
         heroContainer.innerHTML = '';
         for (const [name, hero] of Object.entries(heroData.heroes)) {
@@ -66,10 +64,8 @@ document.addEventListener('DOMContentLoaded', function () {
         }
       };
 
-      // Initial load: Display all heroes
       displayAllHeroes();
 
-      // Handle dropdown change
       dropdownMenu.addEventListener('change', event => {
         const selectedPatchId = event.target.value;
         if (selectedPatchId) {
@@ -78,7 +74,6 @@ document.addEventListener('DOMContentLoaded', function () {
             displayHeroChanges(selectedPatch);
           }
         } else {
-          // Reset view to all heroes if no patch is selected
           comparisonContainer.innerHTML = '';
           displayAllHeroes();
         }

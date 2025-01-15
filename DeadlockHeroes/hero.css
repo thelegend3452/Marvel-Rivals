@@ -51,7 +51,6 @@ section h2, section h3 {
   padding-bottom: 5px;
 }
 
-/* Hero Section */
 #hero-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -85,7 +84,6 @@ section h2, section h3 {
   color: white;
 }
 
-/* Dropdown Menu */
 .dropdown-container {
   display: flex;
   justify-content: center;
@@ -121,7 +119,6 @@ button.compare-button:hover {
   color: #1e1e1e;
 }
 
-/* Comparison Container */
 #comparison-container {
   margin-top: 20px;
   padding: 15px;
@@ -138,7 +135,6 @@ button.compare-button:hover {
   margin-bottom: 5px;
 }
 
-/* Team-Up Section */
 .team-up-images {
   display: flex;
   gap: 10px;
@@ -150,7 +146,6 @@ button.compare-button:hover {
   border-radius: 5px;
 }
 
-/* Modal Styling */
 .modal {
   display: none;
   position: fixed;
@@ -206,7 +201,6 @@ button.compare-button:hover {
   color: white;
 }
 
-/* Footer */
 footer {
   background-color: #1e1e1e;
   color: white;
@@ -215,4 +209,21 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
+}
+
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  nav ul li{
+    margin:10px 0;
+    }
+
+    #patch-dropdown {
+      max-width: 100%;
+    }
+  
 }

@@ -17,7 +17,6 @@ document.addEventListener('DOMContentLoaded', function () {
         return;
       }
 
-      // Populate dropdown menu
       patches.forEach(patch => {
         const option = document.createElement('option');
         option.value = patch.patchId;
@@ -30,21 +29,19 @@ document.addEventListener('DOMContentLoaded', function () {
         : patches[0];
 
       if (!selectedPatch) {
-        container.innerHTML = `<p>Patch not found. Please select a valid patch.</p>`;
+        container.innerHTML = `<p>Patch not found.</p>`;
         return;
       }
 
       dropdownMenu.value = selectedPatch.patchId;
 
       const displayPatchDetails = patch => {
-        // Clear previous content
         container.innerHTML = `
           <h2>${patch.title}</h2>
           <p><strong>Release Date:</strong> ${patch.releaseDate}</p>
           <p>${patch.summary}</p>
         `;
 
-        // Display main content
         if (patch.content) {
           patch.content.forEach(section => {
             const sectionElement = document.createElement('section');
@@ -83,7 +80,6 @@ document.addEventListener('DOMContentLoaded', function () {
           container.innerHTML += `<p>No additional content available for this patch.</p>`;
         }
 
-        // Display hero-specific changes
         if (patch.heroes && Object.keys(patch.heroes).length > 0) {
           Object.keys(patch.heroes).forEach(category => {
             const section = document.createElement('section');
@@ -105,10 +101,9 @@ document.addEventListener('DOMContentLoaded', function () {
             container.appendChild(section);
           });
         } else {
-          container.innerHTML += `<p>No hero data available for this patch.</p>`;
+          container.innerHTML += `<p>No hero changes for this patch.</p>`;
         }
 
-        // Display team-up abilities
         const teamUpSection = document.createElement('section');
         teamUpSection.innerHTML = `<h3>Team-Up Abilities</h3>`;
         if (patch.teamUpAbilities && patch.teamUpAbilities.length > 0) {
@@ -134,15 +129,13 @@ document.addEventListener('DOMContentLoaded', function () {
             teamUpSection.appendChild(teamUpElement);
           });
         } else {
-          teamUpSection.innerHTML += `<p>No team-up abilities available for this patch.</p>`;
+          teamUpSection.innerHTML += `<p>No team-up changes for this patch.</p>`;
         }
         container.appendChild(teamUpSection);
       };
 
-      // Display initially selected patch
       displayPatchDetails(selectedPatch);
 
-      // Update on dropdown change
       dropdownMenu.addEventListener('change', event => {
         const selectedId = event.target.value;
         const newSelectedPatch = patches.find(patch => patch.patchId === selectedId);

@@ -191,9 +191,7 @@ footer {
       font-size: 18px; 
   }
 
-  nav ul li a {
-      font-size: 12px; 
-  }
+  
 
   .hero h4, .team-up h4 {
       font-size: 16px; 
@@ -201,5 +199,9 @@ footer {
 
   .team-up-image {
       width: 60px; 
+  }
+
+  #patch-dropdown{
+    max-width: 100%;
   }
 }
