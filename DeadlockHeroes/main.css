@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #2e2e2e;
+    background: linear-gradient(to top right, #5D3FD3, #dddaec ,#e8ec0f);
     color: white;
     margin: 0;
     padding: 0;
@@ -47,7 +47,7 @@ main {
 
 .column {
     flex: 1;
-    background-color: #3e3e3e;
+    background: linear-gradient(to top left, #100f15, #a7a2bc, #5e39f3);
     padding: 15px;
     margin: 10px;
     border-radius: 10px;
@@ -61,11 +61,15 @@ main {
 }
 
 .card {
-    background-color: #1e1e1e;
+    background-color: #100f11;
     padding: 15px;
     margin: 10px 0;
     border-radius: 10px;
     text-align: center;
+    cursor: pointer;
+}
+.card:hover{
+    background-color: #3e3e3e;
 }
 
 .card h4 {
@@ -80,7 +84,7 @@ main {
 }
 
 #bottom-section {
-    background-color: #3e3e3e;
+    background: linear-gradient(to top, #100f15, #a7a2bc, #5e39f3);
     padding: 15px;
     margin-top: 20px;
     border-radius: 10px;
