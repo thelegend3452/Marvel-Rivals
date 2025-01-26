@@ -19,11 +19,10 @@
     </div>
   </div>
 
-  <!-- Header -->
   <header>
     <nav>
       <ul>
-        <li><a href="index.html">Patches</a></li>
+        <li><a href="patchnotes.html">Patches</a></li>
         <li><a href="hero.html">Heroes</a></li>
       </ul>
     </nav>
@@ -72,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function () {
         `;
 
         patchElement.addEventListener('click', () => {
-          window.location.href = `index.html?patchId=${patch.patchId}`;
+          window.location.href = `patchnotes.html?patchId=${patch.patchId}`;
         });
 
         patchList.appendChild(patchElement);
