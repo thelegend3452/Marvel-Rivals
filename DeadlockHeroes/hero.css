@@ -1,14 +1,13 @@
-/* General Styles */
 body {
   font-family: Arial, sans-serif;
-  background-color: #2e2e2e;
+  background: linear-gradient(to top right, #ff0000, #ffffff,#0000ff , #000000, #ffff00);
   color: white;
   margin: 0;
   padding: 0;
 }
 
 header {
-  background-color: #1e1e1e;
+  background-color: #000000;
   padding: 15px 0;
   text-align: center;
 }
@@ -19,35 +18,53 @@ nav ul {
   margin: 0;
   display: flex;
   justify-content: center;
+  background-color: #0a0a23;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
 }
 
 nav ul li {
   margin: 0 15px;
+  position: relative;
 }
 
 nav ul li a {
-  color: yellow;
+  color: white;
   text-decoration: none;
   font-weight: bold;
   text-transform: uppercase;
+  padding: 10px 15px;
+  transition: color 0.3s ease, border-bottom-color 0.3s ease;
+  border-bottom: 2px solid transparent;
 }
 
 nav ul li a:hover {
-  color: red;
+  color: #f3ff08;
+  border-bottom-color: #f3ff08;
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
 }
+
+nav ul li a:active {
+  color: #e53935;
+}
+
+header:hover {
+  background-color: #151526;
+}
+
 
 main {
   padding: 20px;
 }
 
 h1 {
-  color: yellow;
+  color: #ffff00;
   text-align: center;
 }
 
 section h2, section h3 {
-  color: yellow;
-  border-bottom: 2px solid yellow;
+  color: #ffff00;
+  border-bottom: 2px solid #ffff00;
   padding-bottom: 5px;
 }
 
@@ -59,12 +76,17 @@ section h2, section h3 {
 }
 
 .hero-card {
-  background-color: #3e3e3e;
+  background-color: #8686d3;
   border-radius: 10px;
   text-align: center;
   padding: 15px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.hero-card:hover {
+  transform: scale(1.05);
 }
 
 .hero-card img {
@@ -75,15 +97,16 @@ section h2, section h3 {
 }
 
 .hero-card h4 {
-  color: red;
+  color: #ff0000;
   margin-bottom: 10px;
 }
 
 .hero-card p {
   font-size: 0.9rem;
-  color: white;
+  color: #ffffff;
 }
 
+/* Dropdown and Button */
 .dropdown-container {
   display: flex;
   justify-content: center;
@@ -97,7 +120,7 @@ select {
   border-radius: 8px;
   border: none;
   background-color: #1e1e1e;
-  color: yellow;
+  color: #ffff00;
 }
 
 select:focus {
@@ -106,44 +129,18 @@ select:focus {
 
 button.compare-button {
   padding: 10px 20px;
-  background-color: red;
-  color: white;
+  background-color: #ff0000;
+  color: #ffffff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-size: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 button.compare-button:hover {
-  background-color: yellow;
-  color: #1e1e1e;
-}
-
-#comparison-container {
-  margin-top: 20px;
-  padding: 15px;
-  background-color: #3e3e3e;
-  border-radius: 10px;
-}
-
-.hero ul {
-  list-style: disc;
-  padding-left: 20px;
-}
-
-.hero ul li {
-  margin-bottom: 5px;
-}
-
-.team-up-images {
-  display: flex;
-  gap: 10px;
-}
-
-.team-up-image {
-  width: 100px;
-  height: auto;
-  border-radius: 5px;
+  background-color: #ffff00;
+  color: #000000;
 }
 
 .modal {
@@ -179,7 +176,7 @@ button.compare-button:hover {
 }
 
 .modal-content h2 {
-  color: yellow;
+  color: #ffff00;
   margin-bottom: 15px;
 }
 
@@ -188,7 +185,7 @@ button.compare-button:hover {
 }
 
 .modal-close {
-  color: red;
+  color: #ff0000;
   position: absolute;
   top: 10px;
   right: 20px;
@@ -198,11 +195,11 @@ button.compare-button:hover {
 }
 
 .modal-close:hover {
-  color: white;
+  color: #ffffff;
 }
 
 footer {
-  background-color: #1e1e1e;
+  background-color: #000000;
   color: white;
   text-align: center;
   padding: 10px 0;
@@ -211,19 +208,17 @@ footer {
   width: 100%;
 }
 
-
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
     align-items: center;
   }
-  
-  nav ul li{
-    margin:10px 0;
-    }
 
-    #patch-dropdown {
-      max-width: 100%;
-    }
-  
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  #patch-dropdown {
+    max-width: 100%;
+  }
 }

@@ -52,23 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 <h4>${item.title}</h4>
                 <ul>
                   ${item.details
-                    .map(detail => {
-                      const heroName = Object.keys(heroData.heroes).find(hero =>
-                        detail.includes(hero)
-                      );
-                      const heroDetails = heroName ? heroData.heroes[heroName] : null;
-
-                      if (heroDetails) {
-                        return `
-                          <li>
-                            <img src="${heroDetails.image || 'default-image.jpg'}" alt="${heroName}" class="inline-hero-image">
-                            ${detail}
-                          </li>
-                        `;
-                      } else {
-                        return `<li>${detail}</li>`;
-                      }
-                    })
+                    .map(detail => getStyledChangeWithImages(detail, heroData))
                     .join('')}
                 </ul>
               `;
@@ -93,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 <img src="${heroDetails?.image || 'default-image.jpg'}" alt="${hero.name}" class="hero-image" />
                 <p>${heroDetails?.description || 'No description available.'}</p>
                 <ul>
-                  ${hero.changes.map(change => `<li>${change}</li>`).join('')}
+                  ${hero.changes.map(change => getStyledChange(change)).join('')}
                 </ul>
               `;
               section.appendChild(heroElement);
@@ -123,7 +107,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
               </div>
               <ul>
-                ${teamUp.changes.map(change => `<li>${change}</li>`).join('')}
+                ${teamUp.changes.map(change => getStyledChange(change)).join('')}
               </ul>
             `;
             teamUpSection.appendChild(teamUpElement);
@@ -132,6 +116,67 @@ document.addEventListener('DOMContentLoaded', function () {
           teamUpSection.innerHTML += `<p>No team-up changes for this patch.</p>`;
         }
         container.appendChild(teamUpSection);
+      };
+
+      const getStyledChangeWithImages = (change, heroData) => {
+        const buffKeywords = /increase|reduce delay|reduce cooldown/i;
+        const nerfKeywords = /reduce|decrease|falloff/i;
+
+        const heroName = Object.keys(heroData.heroes).find(hero =>
+          change.includes(hero)
+        );
+        const heroDetails = heroName ? heroData.heroes[heroName] : null;
+
+        const imageTag = heroDetails
+          ? `<img src="${heroDetails.image || 'default-image.jpg'}" alt="${heroName}" class="inline-hero-image">`
+          : '';
+
+        if (buffKeywords.test(change)) {
+          return `
+            <li class="buff">
+              <span>&#9650;</span>
+              <span>BUFF</span>
+              ${imageTag}
+              <span class="change-text">${change}</span>
+            </li>
+          `;
+        } else if (nerfKeywords.test(change)) {
+          return `
+            <li class="nerf">
+              <span>&#9660;</span>
+              <span>NERF</span>
+              ${imageTag}
+              <span class="change-text">${change}</span>
+            </li>
+          `;
+        } else {
+          return `<li>${imageTag}<span class="change-text">${change}</span></li>`;
+        }
+      };
+
+      const getStyledChange = change => {
+        const buffKeywords = /increase|reduce delay|reduce cooldown/i;
+        const nerfKeywords = /reduce|decrease|falloff/i;
+
+        if (buffKeywords.test(change)) {
+          return `
+            <li class="buff">
+              <span>&#9650;</span>
+              <span>BUFF</span>
+              <span class="change-text">${change}</span>
+            </li>
+          `;
+        } else if (nerfKeywords.test(change)) {
+          return `
+            <li class="nerf">
+              <span>&#9660;</span>
+              <span>NERF</span>
+              <span class="change-text">${change}</span>
+            </li>
+          `;
+        } else {
+          return `<li><span class="change-text">${change}</span></li>`;
+        }
       };
 
       displayPatchDetails(selectedPatch);

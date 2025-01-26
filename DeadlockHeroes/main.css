@@ -1,15 +1,70 @@
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to top right, #5D3FD3, #dddaec ,#e8ec0f);
+    background: linear-gradient(to top right, #0a0a23, #1b1b3a, #3d3d73);
     color: white;
     margin: 0;
     padding: 0;
 }
 
+.video-container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.video-container video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+}
+
+.video-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 3;
+}
+
+.video-text h1 {
+    font-size: 48px;
+    margin: 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.video-text p {
+    font-size: 18px;
+    margin: 10px 0 0;
+    font-style: italic;
+    color: #e3e3e3;
+}
+
 header {
-    background-color: #1e1e1e;
+    background-color: #0a0a23;
     padding: 15px 0;
     text-align: center;
+    z-index: 4;
+    position: relative;
 }
 
 nav ul {
@@ -18,21 +73,38 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: center;
+    background-color: #0a0a23;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
 }
 
 nav ul li {
     margin: 0 15px;
+    position: relative;
 }
 
 nav ul li a {
-    color: yellow;
+    color: white;
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
+    padding: 10px 15px;
+    transition: color 0.3s ease, border-bottom-color 0.3s ease;
+    border-bottom: 2px solid transparent;
 }
 
 nav ul li a:hover {
-    color: red;
+    color: #f3ff08;
+    border-bottom-color: #f3ff08;
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+}
+
+nav ul li a:active {
+    color: #e53935;
+}
+
+header:hover {
+    background-color: #151526;
 }
 
 main {
@@ -42,78 +114,71 @@ main {
 #top-section {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 }
 
 .column {
     flex: 1;
-    background: linear-gradient(to top left, #100f15, #a7a2bc, #5e39f3);
+    background: linear-gradient(to top left, #1b1b2f, #292949, #3a3a72);
     padding: 15px;
     margin: 10px;
     border-radius: 10px;
-    min-width: 300px; 
+    min-width: 300px;
+    color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.7);
 }
 
 .column h2 {
-    color: yellow;
-    border-bottom: 2px solid yellow;
+    color: white;
+    border-bottom: 2px solid #ffc107;
     padding-bottom: 5px;
 }
 
 .card {
-    background-color: #100f11;
+    background-color: #ffffff;
     padding: 15px;
     margin: 10px 0;
     border-radius: 10px;
     text-align: center;
     cursor: pointer;
-}
-.card:hover{
-    background-color: #3e3e3e;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    color: #0a0a23;
 }
 
-.card h4 {
-    color: red;
-    margin-bottom: 10px;
+.card:hover {
+    background-color: #f3f3f3;
+    transform: translateY(-5px);
+    border: 2px solid yellow;
 }
 
 .card img {
     width: 100px;
     height: auto;
     border-radius: 5px;
+    border: 2px solid #ddf61e;
 }
 
-#bottom-section {
-    background: linear-gradient(to top, #100f15, #a7a2bc, #5e39f3);
-    padding: 15px;
-    margin-top: 20px;
-    border-radius: 10px;
-}
-
-#bottom-section h2 {
-    color: yellow;
-    border-bottom: 2px solid yellow;
-    padding-bottom: 5px;
+.card h4 {
+    color: #0a0a23;
+    margin-bottom: 10px;
 }
 
 footer {
-    background-color: #1e1e1e;
+    background-color: #0a0a23;
     color: white;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
 
 @media (max-width: 1024px) {
     #top-section {
-        flex-direction: column; 
+        flex-direction: column;
         align-items: center;
     }
 
     .column {
-        max-width: 80%; 
+        max-width: 80%;
     }
 }
 
@@ -122,13 +187,16 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+    nav ul li a:active {
+        color: #ddf61e;
+    }
 
     nav ul li {
         margin: 10px 0;
     }
 
     .column {
-        max-width: 90%; 
+        max-width: 90%;
     }
 
     .card img {
@@ -136,7 +204,7 @@ footer {
     }
 
     footer {
-        position: static; 
+        position: static;
         margin-top: 20px;
     }
 }
@@ -147,11 +215,11 @@ footer {
     }
 
     h1, .column h2 {
-        font-size: 18px; 
+        font-size: 18px;
     }
 
     .card img {
-        width: 60px; 
+        width: 60px;
     }
 
     .card h4 {

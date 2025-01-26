@@ -7,6 +7,19 @@
   <link rel="stylesheet" href="main.css">
 </head>
 <body>
+  <div class="video-container">
+    <video autoplay muted loop playsinline>
+      <source src="https://marvelrivals.v.easebar.com/2025/0112/s1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="video-overlay"></div>
+    <div class="video-text">
+      <h1>Marvel Rivals</h1>
+      <p>Season 1: Eternal Night Rises</p>
+    </div>
+  </div>
+
+  <!-- Header -->
   <header>
     <nav>
       <ul>
@@ -20,10 +33,8 @@
     <section id="top-section">
       <div class="column" id="patch-list">
         <h2>Latest Patches</h2>
-       
       </div>
       <div class="column" id="placeholder">
-        
       </div>
     </section>
     
@@ -34,10 +45,8 @@
     </section>
   </main>
   
-  
-
   <footer>
-    Not affialted with NetEase Games in any way. A student trying to make reading easier.
+    Not affiliated with NetEase Games in any way. A student trying to make reading easier.
   </footer>
 
   <script>
@@ -71,8 +80,6 @@ document.addEventListener('DOMContentLoaded', function () {
     })
     .catch(error => console.error('Error loading patch notes:', error));
 
-
-
  fetch('heroes.json')
     .then(response => response.json())
     .then(heroData => {
@@ -95,8 +102,6 @@ document.addEventListener('DOMContentLoaded', function () {
     })
     .catch(error => console.error('Error loading heroes:', error));
 });
-
-
   </script>
 </body>
 </html>
