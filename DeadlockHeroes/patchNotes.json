@@ -12,7 +12,7 @@
             "name": "Captain America",
             "changes": [
               "Reduce the delay time for shield restoration after releasing Living Legend from 3s to 2s.",
-              "Reduce Liberty Rush cooldown from 12s to 10s.",
+              "Liberty Rush cooldown 12s to 10s.",
               "Increase base health from 650 to 675.",
               "Reduce the energy cost for releasing Freedom Charge (ultimate ability) from 3400 to 3100; Reduce the additional health provided per second to self after releasing it from 110 to 100."
             ]
@@ -112,7 +112,7 @@
       "patchId": "20241210",
       "patchVersion": "20241210",
       "releaseDate": "10-12-2025",
-      "title": "Marvel Rivals Version 20241210 Patch Notes",
+      "title": "Marvel Rivals Patch Notes",
       "summary": "Greetings, Rivals! We're here to give you the scoop on Version 20241210's updates!",
       "content": [
         {
@@ -142,7 +142,7 @@
       "patchId": "20241219",
       "patchVersion": "20241219",
       "releaseDate": "19-12-2024",
-      "title": "Marvel Rivals Winter Celebration Version 20241219 Patch Notes",
+      "title": "Marvel Rivals Winter Celebration Patch Notes",
       "summary": "Dear Rivals: Get ready to embrace the chill and welcome the holiday season with the first Special Event of Marvel Rivals!",
       "content": [
         {
