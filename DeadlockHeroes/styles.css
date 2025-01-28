@@ -46,7 +46,7 @@ nav ul li a:hover {
 }
 
 #patch-dropdown, #hero-dropdown {
-  width: 220px;
+  width: 400px;
   border-radius: 10px;
   border: 2px solid #ffd700;
   background-color: #ffffff; 
@@ -69,7 +69,6 @@ nav ul li a:hover {
   outline: none;
 }
 
-/* Main content */
 main {
   padding: 20px;
 }
@@ -195,6 +194,9 @@ footer {
   .team-up-image {
     width: 80px;
   }
+  #patch-dropdown,
+  #hero-dropdown {
+  width: 100%; }
 
   footer {
     position: static;
@@ -221,6 +223,5 @@ footer {
 
   #patch-dropdown,
   #hero-dropdown {
-    max-width: 100%;
-  }
+  width: 100%; }
 }
