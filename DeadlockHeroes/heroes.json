@@ -1,107 +1,135 @@
 {
   "heroes": {
     "Captain America": {
+      "role": "Tank",
       "image": "photos/Captain_America.webp",
-      "description": "A super soldier and leader of the Avengers."
+      "description": "Enhanced by the Super-Soldier Serum, Steven Rogers uses his Vibranium shield and extensive combat training to confront any threat to justice. When Captain America rallies his troops, a wave of courage sweeps across the battlefield!"
     },
     "Venom":{
+      "role": "Tank",
       "image": "photos/Venom.webp",
-      "description":""
+      "description":"Using his symbiote-enhanced body as the perfect living weapon, Eddie Brock and his alien ally stand ever-ready to unleash vicious attacks upon anyone he deems an enemy. Those ensnared by Venom's tentacles have no choice but to surrender to this insatiable predator."
     },
     "Doctor Strange": {
+      "role": "Tank",
       "image": "photos/Doctor_Strange.webp",
-      "description": "Master of the Mystic Arts."
+      "description": "As the Sorcerer Supreme, Doctor Stephen Strange gracefully wields ancient spells to turn the tide of even the most impossible battle. However, magic always comes at a cost, and each use of his arcane abilities gradually awakens the darkness within him."
     },
     "Black Panther": {
+      "role": "FrontLine",
       "image": "photos/Black_Panther.webp",
-      "description": "King of Wakanda, protector of his people."
+      "description": "T'Challa, King of Wakanda, wields the perfect blend of the cutting-edge Vibranium technology and ancestral power drawn from the Panther God, Bast. The Black Panther bides his time until elegantly infiltrating enemy lines and commencing his hunt."
     },
     "Hawkeye": {
+      "role":"FrontLine",
       "image": "photos/Hawkeye.webp",
-      "description": "Master archer and member of the Avengers."
+      "description": "Despite his lack of superpowers, Hawkeye's unparalleled skills as a marksman have earned him a spot alongside earth's mightiest heroes. With a cool head and steady hand, Clint Barton never misses a target… so enemies best stay out of his sights!"
     },
     "Thor": {
+      "role":"Tank",
       "image": "photos/Thor.webp",
-      "description": "God of Thunder, defender of Asgard."
+      "description": "The son of Odin taps into his divine power to call forth thunder and lightning, raining down relentless fury upon his enemies. With his mighty hammer Mjolnir in hand, Thor effortlessly asserts his dominance on the field of combat."
     },
     "Groot": {
+      "role":"Tank",
       "image": "photos/Groot.webp",
       "description": "A sentient tree and member of the Guardians of the Galaxy."
     },
     "Magneto": {
+      "role":"Tank",
       "image": "photos/Magneto.webp",
-      "description": "Master of magnetism and sometimes villain, sometimes ally."
+      "description": "The Master of Magnetism bends even the strongest metal to his whims, shielding his allies and striking at his foes. Whether he calls himself Max Eisenhardt, Erik Lehnsherr, or simply Magneto, the hardships this warrior has endured have made him as unbreakable as the steel he brandishes."
     },
     "Hulk": {
+      "role":"Tank",
       "image": "photos/Hulk.webp",
-      "description": "The green-skinned powerhouse of the Avengers."
+      "description": "Brilliant scientist Dr. Bruce Banner has finally found a way to coexist with his monstrous alter ego, the Hulk. By accumulating gamma energy over multiple transformations, he can become a wise and strong Hero Hulk or a fierce and destructive Monster Hulk – a true force of fury on the battlefield!"
     },
     "Loki": {
+      "role": "Strategist",
       "image": "photos/Loki.webp",
       "description": "God of Mischief and Thor's brother."
     },
     "Hela": {
+      "role":"FrontLine",
       "image": "photos/Hela.webp",
-      "description": "Goddess of Death and ruler of Hel."
+      "description": "As the Goddess of Death, Hela wields supreme control over the fallen souls residing in Hel. With a haunting whisper and a murder of crows, the queen of the underworld gracefully reaps the souls of her enemies without an ounce of mercy."
     },
     "Rocket Raccoon": {
+      "role":"Strategist",
       "image": "photos/Rocket.webp",
       "description": "A genetically modified raccoon and expert marksman."
     },
     "Mantis": {
+      "role":"Strategist",
       "image": "photos/Mantis.webp",
-      "description": "A member of the Guardians of the Galaxy with empathic powers."
+      "description": "Mantis uses her impressive mental abilities and her penchant for plant control to anchor any team she fights alongside. Her powers tap into a limitless flow of life energy, gently nourishing everything she touches."
     },
     "Black Widow":{
+      "role":"FrontLine",
       "image": "photos/Widow.webp",
-      "description":""
+      "description":"Natasha Romanova is the world's most elite spy in any era. Her mastery of the sniper rifle eliminates targets from afar, while her shock batons neutralize close-range threats. Black Widow is locked, loaded, and ready to deliver a fatal bite!"
     },
     "Winter Solder":{
+      "role":"FrontLine",
       "image": "photos/Winter.webp",
-      "description":""
+      "description":"Terrifying experiments turned him into a brainwashed assassin, but now James Buchanan Bucky Barnes is in control of his own fate once again. With his enhanced mechanical arm, the Winter Soldier is primed to deliver earth-shattering blows to any foe in his path!"
     },
     "Scarlet Witch":{
-      "image": "photos/Witch.webp"
+      "role": "FrontLine",
+      "image": "photos/Witch.webp",
+      "description": "Wanda Maximoff is adept at harnessing formidable chaos magic, casting hexes with the power to twist and reshape reality itself. Energy, space, and matter are mere playthings in the hands of Scarlet Witch!"
+      
     },
     "Namor":{
+      "role":"FrontLine",
       "image": "photos/Namor.webp",
-      "description":""
+      "description":"The unrivaled King of the Seas, Namor surfs into battle on a mighty wave with an army of fierce aquatic creatures in his wake. When ancient horns of war blare, devastation soon follows as deadly waters engulf the arena."
     },
     "Peni Parker":{
+      "role":"Tank",
       "image": "photos/Parker.webp",
-      "description":""
+      "description":"Peni Parker may be young, but she bravely stands on the frontlines to protect the Web of Life and Destiny. Together, this teen prodigy and her state-of-the-art mech, the sensational SP//dr, make for the most thrilling duo on the battlefield!"
     },
     "Psylocke":{
+      "role":"FrontLine",
       "image": "photos/Psylocke.webp",
-      "description":""
+      "description":"The psychic warrior known as Sai has the Mutant ability to conjure a variety of weapons with the power of her mind. Gracefully gliding across the battlefield, this trained ninja can shatter the enemy's defenses with a single thought."
     },
     "Wolverine":{
+      "role":"FrontLine",
       "image": "photos/Wolverine.webp",
-      "description":""
+      "description":"Thanks to his regenerative healing factor and berserker rage, the centuries-old Logan can fight through the worst pain to go claw-to-claw with any foe. The Wolverine stands ready to shred through all obstacles in his way with his Adamantium claws."
     },
     "The Punisher":{
+      "role":"FrontLine",
       "image": "photos/The_Punisher.webp",
-      "description":""
+      "description":"Expertly wielding a full arsenal of futuristic weapons, Frank Castle is a formidable one-man army. With a steadfast resolve to deliver justice to his enemies, The Punisher won't cease in his mission until every last round is fired!"
     },
     "Squirrel Girl":{
+      "role":"FrontLine",
       "image": "photos/Squirrel_Girl.webp",
-      "description":""
+      "description":"Possessing only the powers of a common squirrel, somehow Doreen Green manages to defeat seemingly invincible enemies in the most unexpected ways. Any foe who counts her out is bound to fall at the hands of the Unbeatable Squirrel Girl!"
     },
     "Moon Knight":{
+      "role":"FrontLine",
       "image": "photos/Moon.webp",
-      "description":""
+      "description":"As the avatar of the Egyptian God of Vengeance, Marc Spector's body has been enhanced by Khonshu himself. Bathed in a luminous aura that pierces the darkness, Moon Knight glides through the night, ready to sear his enemies with his master's sacred Ankhs."
     },
     "Magik":{
+      "role":"FrontLine",
       "image": "photos/Magik.webp",
-      "description":""
+      "description":"Trained in the dark arts and wielding her mighty Soulsword, Magik leaps through portals to navigate the arena with ease. Once Illyana transforms into the demonic Darkchild, all who dare stand against her will fall before her merciless blade."
     },
     "Jeff the Land Shark":{
+      "role": "Strategist",
       "image": "photos/Jeff.webp",
-      "description":""
+      "description":"Most landsharks are vicious creatures of the deep... but not Jeff! This adorable and mischievous little landshark brings splashes of joy and healing to every battle. But if the tide turns, Jeff can morph into a voracious beast, swallowing an army of foes in one giant gulp!"
     },
     "Star-Lord":{
+      "role":"FrontLine",
       "image": "photos/Star-Lord.webp",
-      "description":""
+      "description":"Peter Quill lives to dazzle his foes on the battlefield with his signature swagger. As his element guns paint arcs of devastation, his acrobatic moves sail through the sky with unrivaled style. With performances this spectacular, it's no wonder that Star-Lord is so legendary!"
     }
   },
   "teamUps": {

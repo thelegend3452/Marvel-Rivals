@@ -1,44 +1,26 @@
 body {
   font-family: 'League Spartan', sans-serif;
-  font-size: 32px;
+  font-size: 18px;
   text-transform: uppercase;
-  background-color: #2e2e2e; 
-  color: white; 
+  background-color: #000000; 
+  color: #ffffff; 
   margin: 0;
   padding: 0;
+  line-height: 1.6;
 }
 
 header {
   background-color: #1e1e1e; 
-  padding: 15px 0;
+  padding: 20px 0;
   text-align: center;
+  border-bottom: 3px solid #ff0000;
 }
 
-#patch-dropdown {
-  border-radius: 8px;
-  border: 2px solid #3e3e3e;
-  color: #1e1e1e;
-  background-color: #f5f5f5;
-  padding: 8px 12px;
-  font-size: 16px; 
-  font-weight: bold;
-  outline: none; 
-  cursor: pointer; 
-  transition: all 0.3s ease; 
+header h1 {
+  font-size: 32px;
+  color: #ffd700;
+  text-shadow: 2px 2px #000000;
 }
-
-#patch-dropdown:hover {
-  background-color: #e0e0e0; 
-  
-}
-
-#patch-dropdown:focus {
-  border-color: yellow; 
-  background-color: #f0f0f0;
-}
-
-
-
 
 nav ul {
   list-style: none;
@@ -53,51 +35,73 @@ nav ul li {
 }
 
 nav ul li a {
-  color: yellow;
+  color: #00bfff;
   text-decoration: none;
   font-weight: bold;
-  text-transform: uppercase;
 }
 
 nav ul li a:hover {
-  color: red;
+  color: #ff4500;
+  text-decoration: underline;
 }
 
+#patch-dropdown, #hero-dropdown {
+  width: 220px;
+  border-radius: 10px;
+  border: 2px solid #ffd700;
+  background-color: #ffffff; 
+  color: #1e1e1e;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#patch-dropdown:hover, #hero-dropdown:hover {
+  background-color: #00bfff; 
+  color: #ffffff;
+}
+
+#patch-dropdown:focus, #hero-dropdown:focus {
+  border-color: #ff0000; 
+  background-color: #f0f0f0; 
+  outline: none;
+}
+
+/* Main content */
 main {
   padding: 20px;
 }
 
 h1 {
-  color: yellow;
+  color: #ffd700;
   text-align: center;
 }
 
 section h2, section h3 {
-  color: yellow;
-  border-bottom: 2px solid yellow;
+  color: #00bfff; 
+  border-bottom: 2px solid #ffd700; 
   padding-bottom: 5px;
 }
 
 .hero, .team-up {
-  background-color: #3e3e3e; 
+  background-color: #1e1e1e;
   padding: 15px;
   margin: 20px 0;
   border-radius: 10px;
+  border: 2px solid #00bfff;
 }
 
 .hero h4, .team-up h4 {
-  color: rgb(245, 245, 239);
-  margin-bottom: 10px;
-}
-
-.hero ul, .team-up ul {
-  list-style: disc;
-  padding-left: 20px;
+  color: #ffd700; 
 }
 
 .hero ul li, .team-up ul li {
   margin-bottom: 5px;
+  color: #ffffff;
 }
+
 
 .team-up-images {
   display: flex;
@@ -109,6 +113,7 @@ section h2, section h3 {
   width: 100px;
   height: auto;
   border-radius: 5px;
+  border: 2px solid #ffd700;
 }
 
 .comparison-modal {
@@ -120,21 +125,21 @@ section h2, section h3 {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9); 
 }
 
 .comparison-content {
-  background-color: #2e2e2e;
+  background-color: #1e1e1e; 
   margin: 10% auto;
   padding: 20px;
-  border: 1px solid yellow;
+  border: 3px solid #ffd700; 
   border-radius: 10px;
   width: 80%;
-  color: white;
+  color: #ffffff; 
 }
 
 .modal-close {
-  color: red;
+  color: #ff4500;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -142,102 +147,80 @@ section h2, section h3 {
 }
 
 .modal-close:hover {
-  color: yellow;
-}
-
-li {
-  margin: 10px 0;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-li span {
-  font-size: 16px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-li span.change-text {
-  font-weight: normal;
-  color: white;
+  color: #ffd700; 
 }
 
 .buff span:first-child {
-  color: green;
+  color: #00ff00; 
 }
 
 .buff span:nth-child(2) {
-  color: green;
+  color: #00ff00;
 }
 
 .nerf span:first-child {
-  color: red;
+  color: #ff4500; 
 }
 
 .nerf span:nth-child(2) {
-  color: red;
+  color: #ff4500;
 }
 
-
 footer {
-  background-color: #1e1e1e;
-  color: white;
+  background-color: #1e1e1e; 
+  color: #ffffff;
   text-align: center;
   padding: 10px 0;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  border-top: 3px solid #ffd700; 
 }
 
 @media (max-width: 768px) {
   nav ul {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   nav ul li {
-      margin: 10px 0;
+    margin: 10px 0;
   }
 
   .hero, .team-up {
-      margin: 15px 0;
+    margin: 15px 0;
   }
 
   .team-up-images {
-      gap: 5px; 
+    gap: 5px;
   }
 
   .team-up-image {
-      width: 80px;
+    width: 80px;
   }
 
   footer {
-      position: static; 
-      margin-top: 20px;
+    position: static;
+    margin-top: 20px;
   }
 }
 
 @media (max-width: 480px) {
   body {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   h1 {
-      font-size: 18px; 
+    font-size: 18px;
   }
 
-  
-
   .hero h4, .team-up h4 {
-      font-size: 16px; 
+    font-size: 16px;
   }
 
   .team-up-image {
-      width: 60px; 
+    width: 60px;
   }
 
-  #patch-dropdown{
+  #patch-dropdown,
+  #hero-dropdown {
     max-width: 100%;
   }
 }

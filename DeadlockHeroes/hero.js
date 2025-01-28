@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
   const dropdownMenu = document.getElementById('patch-dropdown');
+  const heroDropdown = document.getElementById('hero-dropdown');
   const heroContainer = document.getElementById('hero-container');
   const comparisonContainer = document.getElementById('comparison-container');
 
@@ -9,6 +10,11 @@ document.addEventListener('DOMContentLoaded', function () {
   ])
     .then(([patchData, heroData]) => {
       const patches = patchData.patches;
+
+      const roles = ['All', 'Tank', 'Strategist', 'FrontLine'];
+      heroDropdown.innerHTML = roles
+        .map(role => `<option value="${role}">${role}</option>`)
+        .join('');
 
       if (!patches || patches.length === 0) {
         dropdownMenu.innerHTML = `<option>No patches available</option>`;
@@ -24,21 +30,23 @@ document.addEventListener('DOMContentLoaded', function () {
         dropdownMenu.appendChild(option);
       });
 
-      const displayAllHeroes = () => {
+      const displayAllHeroes = (roleFilter = 'All') => {
         heroContainer.innerHTML = '';
         for (const [name, hero] of Object.entries(heroData.heroes)) {
-          const heroDiv = document.createElement('div');
-          heroDiv.classList.add('hero-card');
-          heroDiv.innerHTML = `
-            <img src="${hero.image}" alt="${name}" class="hero-image">
-            <h4>${name}</h4>
-            <p>${hero.description || 'No description available.'}</p>
-          `;
-          heroContainer.appendChild(heroDiv);
+          if (roleFilter === 'All' || hero.role === roleFilter) {
+            const heroDiv = document.createElement('div');
+            heroDiv.classList.add('hero-card');
+            heroDiv.innerHTML = `
+              <img src="${hero.image}" alt="${name}" class="hero-image">
+              <h4>${name}</h4>
+              <p id="herodescription">${hero.description || 'No description available.'}</p>
+              <p id="rolename">Role: ${hero.role}</p>
+            `;
+            heroContainer.appendChild(heroDiv);
+          }
         }
       };
 
-      // Display hero changes for a specific patch
       const displayHeroChanges = patch => {
         comparisonContainer.innerHTML = `<h2>Hero Changes in ${patch.title}</h2>`;
         if (patch.heroes && Object.keys(patch.heroes).length > 0) {
@@ -77,6 +85,11 @@ document.addEventListener('DOMContentLoaded', function () {
           comparisonContainer.innerHTML = '';
           displayAllHeroes();
         }
+      });
+
+      heroDropdown.addEventListener('change', event => {
+        const selectedRole = event.target.value;
+        displayAllHeroes(selectedRole);
       });
     })
     .catch(error => console.error('Error loading data:', error));

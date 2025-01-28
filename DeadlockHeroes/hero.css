@@ -106,7 +106,6 @@ section h2, section h3 {
   color: #ffffff;
 }
 
-/* Dropdown and Button */
 .dropdown-container {
   display: flex;
   justify-content: center;
@@ -125,6 +124,19 @@ select {
 
 select:focus {
   outline: none;
+}
+
+#herodescription{
+  margin:5px;
+  gap:10px;
+  font-size: 18px;
+}
+
+#rolename{
+  color:yellow;
+  font-weight: bold;
+  font-size: 20px;
+  
 }
 
 button.compare-button {
