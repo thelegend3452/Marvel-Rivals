@@ -2,7 +2,7 @@ body {
   font-family: 'League Spartan', sans-serif;
   font-size: 18px;
   text-transform: uppercase;
-  background-color: #000000; 
+  background-color: #050603; 
   color: #ffffff; 
   margin: 0;
   padding: 0;
@@ -18,7 +18,7 @@ header {
 
 header h1 {
   font-size: 32px;
-  color: #ffd700;
+  color: #f3ff08;
   text-shadow: 2px 2px #000000;
 }
 
@@ -28,27 +28,35 @@ nav ul {
   margin: 0;
   display: flex;
   justify-content: center;
+  box-shadow: 4px 8px 16px 20px, rgba(249, 243, 243, 1);
 }
 
 nav ul li {
   margin: 0 15px;
+  position: relative;
 }
 
 nav ul li a {
-  color: #00bfff;
+  color: white;
   text-decoration: none;
   font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  transition: color 0.3s ease, border-bottom-color 0.3s ease;
+  border-bottom: 2px solid transparent;
 }
 
 nav ul li a:hover {
-  color: #ff4500;
-  text-decoration: underline;
+  color: #f3ff08;
+  border-bottom-color: #f3ff08;
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
 }
 
 #patch-dropdown, #hero-dropdown {
   width: 400px;
   border-radius: 10px;
-  border: 2px solid #ffd700;
+  border: 2px solid #f3ff08;
   background-color: #ffffff; 
   color: #1e1e1e;
   padding: 10px 15px;
@@ -74,13 +82,14 @@ main {
 }
 
 h1 {
-  color: #ffd700;
+  color: #f3ff08;
+  font-size: 2em;
   text-align: center;
 }
 
 section h2, section h3 {
   color: #00bfff; 
-  border-bottom: 2px solid #ffd700; 
+  border-bottom: 2px solid #f3ff08; 
   padding-bottom: 5px;
 }
 
@@ -93,14 +102,18 @@ section h2, section h3 {
 }
 
 .hero h4, .team-up h4 {
-  color: #ffd700; 
+  color: #f3ff08; 
 }
 
 .hero ul li, .team-up ul li {
   margin-bottom: 5px;
   color: #ffffff;
 }
-
+.inline-hero-image {
+  height: 200px;
+  display: block;
+  margin-right: auto;
+}
 
 .team-up-images {
   display: flex;
@@ -112,7 +125,7 @@ section h2, section h3 {
   width: 100px;
   height: auto;
   border-radius: 5px;
-  border: 2px solid #ffd700;
+  border: 2px solid #f3ff08;
 }
 
 .comparison-modal {
@@ -131,7 +144,7 @@ section h2, section h3 {
   background-color: #1e1e1e; 
   margin: 10% auto;
   padding: 20px;
-  border: 3px solid #ffd700; 
+  border: 3px solid #f3ff08; 
   border-radius: 10px;
   width: 80%;
   color: #ffffff; 
@@ -146,7 +159,7 @@ section h2, section h3 {
 }
 
 .modal-close:hover {
-  color: #ffd700; 
+  color: #f3ff08; 
 }
 
 .buff span:first-child {
@@ -170,7 +183,7 @@ footer {
   color: #ffffff;
   text-align: center;
   padding: 10px 0;
-  border-top: 3px solid #ffd700; 
+  border-top: 3px solid #f3ff08; 
 }
 
 @media (max-width: 768px) {
