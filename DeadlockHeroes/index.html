@@ -32,21 +32,17 @@
       <div class="column" id="patch-list">
         <h2>Latest Patches</h2>
       </div>
-      <div class="column" id="placeholder">
-        <h2>Live Streams</h2>
-        <div id="twitch-embed"></div>
 
-        <script class="live-stream" src="https://embed.twitch.tv/embed/v1.js"></script>
-        <script type="text/javascript">
-          new Twitch.Embed("twitch-embed", {
-            width: 700,
-            height: 500,
-            channel: "sinatraa",
-            parent: ["marvelrivals2testing.netlify.app"] 
-          });
-        </script>
         
+        <div class="column" id="placeholder">
+          <h2 id="twitch-title"> Now Watching: Marvel Rivals</h2>
+              <div id="twitch-embed">
+              <script src="https://embed.twitch.tv/embed/v1.js"></script>
+              </div>
+          </div>
       </div>
+      
+
     </section>
     
     <section id="bottom-section">
@@ -113,6 +109,71 @@ document.addEventListener('DOMContentLoaded', function () {
     })
     .catch(error => console.error('Error loading heroes:', error));
 });
+
+
+
+
+
+  const CLIENT_ID = "gp762nuuoqcoxypju8c569th9wz7q5"; 
+  const AUTH_TOKEN = "hz92ynk2c98v4owlhlgggy3ii1st84"; 
+  const GAME_NAME = "Marvel Rivals"; 
+
+  async function getGameId(gameName) {
+    const response = await fetch(`https://api.twitch.tv/helix/games?name=${encodeURIComponent(gameName)}`, {
+      headers: {
+        "Client-ID": CLIENT_ID,
+        "Authorization": `Bearer ${AUTH_TOKEN}`
+      }
+    });
+
+    const data = await response.json();
+    return data.data.length > 0 ? data.data[0].id : null;
+  }
+
+  async function getTopStreamer(gameId) {
+    const response = await fetch(`https://api.twitch.tv/helix/streams?game_id=${gameId}&first=1&sort=viewer_count`, {
+      headers: {
+        "Client-ID": CLIENT_ID,
+        "Authorization": `Bearer ${AUTH_TOKEN}`
+      }
+    });
+
+    const data = await response.json();
+    return data.data.length > 0 ? data.data[0].user_login : null;
+  }
+
+  async function loadTopStream() {
+    try {
+      const gameId = await getGameId(GAME_NAME);
+      if (!gameId) {
+        document.getElementById("twitch-title").innerText = `Game Not Found: ${GAME_NAME}`;
+        return;
+      }
+
+      const topStreamer = await getTopStreamer(gameId);
+      if (!topStreamer) {
+        document.getElementById("twitch-title").innerText = `No Live Streams for ${GAME_NAME}`;
+        return;
+      }
+
+      document.getElementById("twitch-title").innerText = `Now Watching: ${topStreamer} playing ${GAME_NAME}`;
+
+      new Twitch.Embed("twitch-embed", {
+        width: 830,
+        height: 500,
+        channel: topStreamer,
+        parent: ["marvelrivals2testing.netlify.app", "localhost"],
+        layout: "video" 
+      });
+
+    } catch (error) {
+      console.error("Error fetching Twitch data:", error);
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", loadTopStream);
+
+
   </script>
 </body>
 </html>

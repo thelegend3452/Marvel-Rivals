@@ -117,6 +117,9 @@ main {
     flex-wrap: wrap;
 }
 
+
+
+  
 .column {
     flex: 1;
     background: linear-gradient(to top left, #1b1b2f, #292949, #3a3a72);
@@ -202,7 +205,7 @@ footer {
     .card img {
         width: 80px;
     }
-    .live-stream{
+    .twitch-container{
         width: 100%;
     }
 
@@ -228,7 +231,8 @@ footer {
     .card h4 {
         font-size: 16px;
     }
-    .live-stream{
+    .twitch-container{
         width: 100%;
     }
+    
 }
