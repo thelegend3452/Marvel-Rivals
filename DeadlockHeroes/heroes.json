@@ -229,6 +229,13 @@
         "photos/Fantastic.webp"
       ],
       "description":"The Invisible Woman taps into her powers, channeling Psionic Might to fortify the entire Fantastic Four team. This formidable force bolsters MISTER FANTASTIC, granting damage resistance. Once activated, they can continually generate Bonus Health, making up for lost Health with each passing moment."
+    },
+    "Thor - Captain America":{
+      "images":[
+        "photos/Thor.webp",
+        "photos/Captain_America.webp"
+      ],
+      "description": "Thor gives Captain America lightning burst, so each hit from Captain America is infused with lightning doing more damage"
     }
   }
 }
