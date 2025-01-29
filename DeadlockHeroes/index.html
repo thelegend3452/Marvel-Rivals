@@ -34,6 +34,18 @@
       </div>
       <div class="column" id="placeholder">
         <h2>Live Streams</h2>
+        <div id="twitch-embed"></div>
+
+        <script src="https://embed.twitch.tv/embed/v1.js"></script>
+        <script type="text/javascript">
+          new Twitch.Embed("twitch-embed", {
+            width: 800,
+            height: 478,
+            channel: "sinatraa",
+            parent: ["marvelrivals2testing.netlify.app"] 
+          });
+        </script>
+        
       </div>
     </section>
     
