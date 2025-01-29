@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function () {
               heroElement.classList.add('hero');
               heroElement.innerHTML = `
                 <h4>${hero.name}</h4>
-                <img src="${heroDetails?.image || 'default-image.jpg'}" alt="${hero.name}" class="hero-image" />
+                <img src="${heroDetails?.image || 'default-image.jpg'}" alt="${hero.name}" class="hero-image"/>
                 <p>${heroDetails?.description || 'No description available.'}</p>
                 <ul>
                   ${hero.changes.map(change => getStyledChange(change)).join('')}
@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       const getStyledChangeWithImages = (change, heroData) => {
         const buffKeywords = /increase|reduce delay|reduce cooldown/i;
-        const nerfKeywords = /reduce|decrease|falloff/i;
+        const nerfKeywords = /reduce|decrease|falloff`|increase cooldown/i;
 
         const heroName = Object.keys(heroData.heroes).find(hero =>
           change.includes(hero)
@@ -156,7 +156,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       const getStyledChange = change => {
         const buffKeywords = /increase|reduce delay|reduce cooldown/i;
-        const nerfKeywords = /reduce|decrease|falloff/i;
+        const nerfKeywords = /reduce|decrease|falloff|increase cooldown/i;
 
         if (buffKeywords.test(change)) {
           return `
