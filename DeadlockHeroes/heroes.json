@@ -147,6 +147,88 @@
             "photos/Loki.webp"
         ],
         "description": "Asgardian siblings with immense power, each with their own agenda."
+    },
+    "Hulk - Iron Man - Doctor Strange": {
+      "images": [
+        "photos/Hulk.webp",
+        "photos/IronMan.webp",
+        "photos/Doctor_Strange.webp"
+      ],
+      "description": "Hulk charges Doctor Strange and Iron Man with gamma radiation. When Doctor Strange uses Maelstrom of Madness, he unleashes excess gamma energy. When Iron Man uses Armor Overdrive, he will initiate a gamma upgrade."
+    },
+    "Rocket Raccoon - Winter Soldier - Punisher": {
+      "images": [
+        "photos/Rocket.webp",
+        "photos/Winter.webp",
+        "photos/Punisher.webp"
+      ],
+      "description": "Rocket Raccoon throws an Ammo Overload Device in the target direction. Upon entering the device's range, The Punisher and the Winter Soldier receive the buffs of Infinite Ammo and Faster Firing."
+    },
+    "Magik - Black Panther - Psylocke":{
+      "images": [
+        "photos/Magik.webp",
+        "photos/Black_Panther.webp",
+        "photos/Psylocke.webp"
+      ],
+      "description":"When Magik is on the field, Black Panther and Psylocke can tap into Limbo to rewind a few seconds back to a previous position; after passing through Limbo, Black Panther and Psylocke will Bonus Health based on missing health"
+    },
+    "Cloack & Dagger - Moon Knight":{
+      "images": [
+        "photos/C&D.webp",
+        "photos/Moon.webp"
+      ],
+      "description":"Cloak & Dagger can inject light and dark energy into Moon Knight to create a Light & Dark Realm where Moon Knight can become invisible."
+    },
+      "Luna Snow - Namor - Jeff The land shark":{
+      "images": [
+        "photos/Luna.webp",
+        "photos/Namor.webp",
+        "photos/Jeff.webp"
+      ],
+      "description":"Luna Snow infuses ice energy into Namor and Jeff the Land Shark, who then can tap into the ice energy to power up abilities at will."
+    },
+    "Adam Warlock - Star-Lord - Mantis":{
+      "images": [
+        "photos/Adam.webp",
+        "photos/Star-lord.webp",
+        "photos/Mantis.webp"
+      ],
+      "description":"Adam Warlock enhances the rebirth power of Star-Lord and Mantis, granting them the power of cocooned revival."
+    },
+    "Hawkeye - Black Widow":{
+      "images": [
+        "photos/Hawkeye.webp",
+        "photos/Widow.webp"
+      ],
+      "description":"Hawkeye can share his Hunter's Sight with Black Widow, enabling her to catch sight of and damage afterimages of enemies."
+    },
+    "Iron Fist - Luna":{
+      "images": [
+        "photos/Iron_Fist_Tile.webp",
+        "photos/Luna.webp"
+      ],
+      "description":"Iron Fist channels the Chi of Shou-Lao into Luna Snow, transforming her ice power into a Chi-infused frosty ring that radiates from her. This ring can launch up enemies with chilling damage and applies a slowing effect, while simultaneously healing her allies."
+    },
+    "Spider-Man - Squirrel Girl":{
+      "images": [
+        "photos/Spider-Man.webp",
+        "photos/Squirrel_Girl.webp"
+      ],
+      "description":"Spider-Man gives Squirrel Girl a web bomb. She can launch it to unleash a explosion upon contact with the environment or an enemy, briefly Immobilizing and damage enemies caught in the blast."
+    },
+    "Hulk - Wolverine":{
+      "images": [
+        "photos/Hulk.webp",
+        "photos/Wolverine.webp"
+      ],
+      "description":"Wolverine, Hulk can interact with each other. Once both parties confirm, Hulk can lift Wolverine and press the key to hurl him forward."
+    },
+    "Invisble Woman - Mister Fantastic":{
+      "images": [
+        "photos/Invisible.webp",
+        "photos/Fantastic.webp"
+      ],
+      "description":"The Invisible Woman taps into her powers, channeling Psionic Might to fortify the entire Fantastic Four team. This formidable force bolsters MISTER FANTASTIC, granting damage resistance. Once activated, they can continually generate Bonus Health, making up for lost Health with each passing moment."
     }
   }
 }
