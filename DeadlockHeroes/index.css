@@ -118,7 +118,24 @@ main {
 }
 
 
-
+.twitch-container {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    aspect-ratio: 16 / 9; /* Keeps the video proportionate */
+  }
+  
+  #twitch-embed iframe {
+    width: 100% !important;
+    height: 100% !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  
+  
   
 .column {
     flex: 1;
@@ -208,6 +225,10 @@ footer {
     .twitch-container{
         width: 100%;
     }
+     
+    #twitch-embed iframe{
+        width: 100% !important;
+    }
 
     footer {
         position: static;
@@ -233,6 +254,9 @@ footer {
     }
     .twitch-container{
         width: 100%;
+    }
+    #twitch-embed iframe{
+        width: 100% !important;
     }
     
 }
