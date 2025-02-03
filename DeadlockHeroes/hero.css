@@ -169,7 +169,7 @@ button.compare-button:hover {
 }
 
 .modal-content {
-  background-color: #3e3e3e;
+  background-color: #e6ea14;
   margin: auto;
   padding: 20px;
   border-radius: 10px;
@@ -194,6 +194,7 @@ button.compare-button:hover {
 
 .modal-content p {
   font-size: 1rem;
+  color: black;
 }
 
 .modal-close {
