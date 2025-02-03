@@ -3,6 +3,9 @@ document.addEventListener('DOMContentLoaded', function () {
   const heroDropdown = document.getElementById('hero-dropdown');
   const heroContainer = document.getElementById('hero-container');
   const comparisonContainer = document.getElementById('comparison-container');
+  const modal = document.getElementById('hero-modal');
+  const modalClose = document.querySelector('.modal-close');
+  const modalContent = document.querySelector('.modal-content');
 
   Promise.all([
     fetch('patchNotes.json').then(response => response.json()),
@@ -42,35 +45,38 @@ document.addEventListener('DOMContentLoaded', function () {
               <p id="herodescription">${hero.description || 'No description available.'}</p>
               <p id="rolename">Role: ${hero.role}</p>
             `;
+            heroDiv.addEventListener('click', () => openModal(hero));
             heroContainer.appendChild(heroDiv);
           }
         }
       };
 
-      const displayHeroChanges = patch => {
-        comparisonContainer.innerHTML = `<h2>Hero Changes in ${patch.title}</h2>`;
-        if (patch.heroes && Object.keys(patch.heroes).length > 0) {
-          Object.keys(patch.heroes).forEach(category => {
-            const heroList = patch.heroes[category];
-            heroList.forEach(hero => {
-              const heroDetails = heroData.heroes[hero.name];
-              const heroElement = document.createElement('div');
-              heroElement.classList.add('hero-card');
-              heroElement.innerHTML = `
-                <h4>${hero.name}</h4>
-                <img src="${heroDetails?.image || 'default-image.jpg'}" alt="${hero.name}" class="hero-image">
-                <p>${heroDetails?.description || 'No description available.'}</p>
-                <ul>
-                  ${hero.changes.map(change => `<li>${change}</li>`).join('')}
-                </ul>
-              `;
-              comparisonContainer.appendChild(heroElement);
-            });
+      const openModal = (hero) => {
+        document.getElementById('modal-hero-image').src = hero.image;
+        document.getElementById('modal-hero-name').textContent = `${hero.name}`;
+        document.getElementById('modal-hero-description').textContent = hero.description || 'No description available.';
+        document.getElementById('modal-hero-role').textContent = `Role: ${hero.role}`;
+        const abilitiesList = document.getElementById('modal-hero-abilities');
+        abilitiesList.innerHTML = '';
+        if (hero.abilities) {
+          hero.abilities.forEach(ability => {
+            const li = document.createElement('li');
+            li.textContent = ability;
+            abilitiesList.appendChild(li);
           });
-        } else {
-          comparisonContainer.innerHTML += `<p>No hero changes in this patch.</p>`;
         }
+        modal.style.display = 'block';
       };
+
+      modalClose.addEventListener('click', () => {
+        modal.style.display = 'none';
+      });
+
+      window.addEventListener('click', (event) => {
+        if (event.target === modal) {
+          modal.style.display = 'none';
+        }
+      });
 
       displayAllHeroes();
 
