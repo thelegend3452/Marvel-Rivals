@@ -155,6 +155,7 @@ button.compare-button:hover {
   color: #000000;
 }
 
+
 .modal {
   display: none;
   position: fixed;
@@ -163,63 +164,140 @@ button.compare-button:hover {
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.8);
-  padding-top: 50px;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+  overflow-y: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .modal-content {
-  background-color: #e6ea14;
-  margin: auto;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
   padding: 20px;
-  border-radius: 10px;
-  width: 80%;
+  width: 50%;
   max-width: 600px;
-  color: white;
-  text-align: center;
+  max-height: 80vh; 
+  overflow-y: auto; 
   position: relative;
+  text-align: center;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  animation: slideUp 0.3s ease-in-out;
 }
 
-.modal-content img {
-  width: 150px;
-  height: auto;
+.modal-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
   border-radius: 10px;
-  margin-bottom: 15px;
 }
 
-.modal-content h2 {
-  color: #ffff00;
-  margin-bottom: 15px;
+.modal-content::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
 }
 
-.modal-content p {
-  font-size: 1rem;
-  color: black;
+#modal-hero-stats, #modal-hero-abilities {
+  max-height: 40vh; 
+  overflow-y: auto;
+  padding-right: 10px;
 }
+
 
 .modal-close {
-  color: #ff0000;
   position: absolute;
-  top: 10px;
+  top: 15px;
   right: 20px;
-  font-size: 28px;
-  font-weight: bold;
+  font-size: 24px;
   cursor: pointer;
+  color: white;
+  transition: 0.3s;
 }
 
 .modal-close:hover {
-  color: #ffffff;
+  color: #ff6b6b;
 }
 
-footer {
-  background-color: #000000;
-  color: white;
-  text-align: center;
-  padding: 10px 0;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+#modal-hero-image {
+  width: 100px;
+  height: 100
 }
+
+
+#modal-hero-name {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#modal-hero-role {
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffeb3b;
+  margin-bottom: 10px;
+}
+
+#modal-hero-stats {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 15px;
+  font-size: 16px;
+  text-align: left;
+}
+
+#modal-hero-stats p {
+  margin: 5px 0;
+  color: #ddd;
+}
+
+#modal-hero-abilities {
+  list-style: none;
+  padding: 0;
+}
+
+#modal-hero-abilities li {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 8px;
+  color: #fff;
+  transition: 0.3s;
+}
+
+#modal-hero-abilities li:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+
 
 @media (max-width: 768px) {
   nav ul {
@@ -234,4 +312,7 @@ footer {
   #patch-dropdown {
     max-width: 100%;
   }
+    .modal-content {
+      width: 80%;
+    }
 }

@@ -20,8 +20,73 @@
     "Black Panther": {
       "role": "FrontLine",
       "image": "photos/Black_Panther.webp",
-      "description": "T'Challa, King of Wakanda, wields the perfect blend of the cutting-edge Vibranium technology and ancestral power drawn from the Panther God, Bast. The Black Panther bides his time until elegantly infiltrating enemy lines and commencing his hunt."
-    },
+      "description": "T'Challa, King of Wakanda, wields the perfect blend of the cutting-edge Vibranium technology and ancestral power drawn from the Panther God, Bast. The Black Panther bides his time until elegantly infiltrating enemy lines and commencing his hunt.",
+      "stats": {
+        "health": "300hp",
+          "damage":  {
+            "melee_damage": "35hp",
+            "maximum_distance": "3m",
+            "attack_speed": "0.44s per hit"
+          },
+        "traveling_speed": "7m/s"
+      },
+      "abilities": {
+        "ability1": {
+          "ability_name": "BAST DESCENT",
+            "ability_stats": {
+              "key": "bind",
+              "range": "L: 22m, W: 20m, H: 7m",
+              "damage": "150hp",
+              "energy_cost": "3300"
+            }
+        },
+        "ability2": {
+          "ability_name": "SPIRIT REND",
+            "ability_stats": {
+              "key": "bind",
+              "damage": "80hp",
+              "range": "15m",
+              "cooldown": "8s"
+            }
+        },
+        "ability3": {
+          "ability_name": "SPINNING KICK",
+            "ability_stats": {
+              "key": "bind",
+              "damage": "70hp",
+              "range": "15m",
+              "cooldown": "8s"
+            }
+        },
+        "ability4": {
+          "ability_name": "SUBLE STEP",
+            "ability_stats": {
+              "key": "bind",
+              "speed": "10m/s",
+              "cooldown": "3s"
+            }
+        },
+        "ability5": {
+          "ability_name": "SPEAR TOSS",
+            "ability_stats": {
+              "key": "bind",
+              "damage": "45hp",
+              "speed": "60m/s",
+              "range": "5m",
+              "cooldown": "6s",
+              "charges": "2"
+            }
+        },
+        "ability6": {
+          "ability_name": "PANTHER CUNNING",
+            "ability_stats": {
+              "key": "passive",
+              "damage": "50hp",
+              "cooldown": "10s"
+            }
+        }
+  }
+},
     "Hawkeye": {
       "role":"FrontLine",
       "image": "photos/Hawkeye.webp",
@@ -31,15 +96,14 @@
       "role":"Tank",
       "image": "photos/Thor.webp",
       "description": "The son of Odin taps into his divine power to call forth thunder and lightning, raining down relentless fury upon his enemies. With his mighty hammer Mjolnir in hand, Thor effortlessly asserts his dominance on the field of combat.",
-        "stats": {
-          "health": "700hp",
-            "damage": {
-              "melee_damage": "70hp",
-              "long_range_melee": "80hp"
-            },
-          "traveling_speed": "2m/s"
-        } 
-      
+      "stats": {
+        "health": "700hp",
+          "damage": {
+            "melee_damage": "70hp",
+            "long_range_melee": "80hp"
+          },
+        "traveling_speed": "2m/s"
+      }
     },
     "Groot": {
       "role":"Tank",

@@ -8,7 +8,7 @@
 </head>
 <body>
 
- <header>
+  <header>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -17,31 +17,23 @@
     </nav>
   </header>
 
-
   <main>
     <section id="patch-selector">
       <h1>Patch Notes</h1>
       <select id="patch-dropdown"></select>
     </section>
     <section id="comparison-container"></section>
-  </main>
 
-  <main>
     <section id="hero-selector">
-      <select id="hero-dropdown">
-      </select>
+      <h2>Select Hero Role</h2>
+      <select id="hero-dropdown"></select>
     </section>
-  </main>
-  
 
-  <main>
     <section id="hero-section">
       <h1>Heroes</h1>
       <div id="hero-container"></div>
     </section>
-  
-   
-  
+
     <div id="hero-modal" class="modal">
       <div class="modal-content">
         <span class="modal-close">&times;</span>
@@ -49,10 +41,11 @@
         <h2 id="modal-hero-name"></h2>
         <p id="modal-hero-description"></p>
         <p id="modal-hero-role"></p>
+        <div id="modal-hero-stats"></div>
+        <h3>Abilities</h3>
         <ul id="modal-hero-abilities"></ul>
       </div>
     </div>
-
   </main>
 
   <script src="hero.js"></script>
