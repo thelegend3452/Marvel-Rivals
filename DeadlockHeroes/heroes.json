@@ -14,6 +14,8 @@
       "role": "Tank",
       "image": "photos/Doctor_Strange.webp",
       "description": "As the Sorcerer Supreme, Doctor Stephen Strange gracefully wields ancient spells to turn the tide of even the most impossible battle. However, magic always comes at a cost, and each use of his arcane abilities gradually awakens the darkness within him."
+      
+      
     },
     "Black Panther": {
       "role": "FrontLine",
@@ -28,7 +30,16 @@
     "Thor": {
       "role":"Tank",
       "image": "photos/Thor.webp",
-      "description": "The son of Odin taps into his divine power to call forth thunder and lightning, raining down relentless fury upon his enemies. With his mighty hammer Mjolnir in hand, Thor effortlessly asserts his dominance on the field of combat."
+      "description": "The son of Odin taps into his divine power to call forth thunder and lightning, raining down relentless fury upon his enemies. With his mighty hammer Mjolnir in hand, Thor effortlessly asserts his dominance on the field of combat.",
+        "stats": {
+          "health": "700hp",
+            "damage": {
+              "melee_damage": "70hp",
+              "long_range_melee": "80hp"
+            },
+          "traveling_speed": "2m/s"
+        } 
+      
     },
     "Groot": {
       "role":"Tank",
